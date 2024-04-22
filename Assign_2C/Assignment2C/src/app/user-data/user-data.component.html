@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>User Data</title>
+</head>
+<body>
+<div class="container-fluid d-flex flex-column align-items-center justify-content-center position-relative" style="height: 100vh;">
+	<div class="card mt-xxl-5 align-items-center justify-content-center shadow" style="padding: 30px 20px 10px 20px; margin: 0 0 30px 0; min-width: 25%">
+		<h1 style="margin: 0 0 20px 0">Hello!</h1>
+		<p>Username: {{user.username}}</p>
+		<p>Email: {{user.email}}</p>
+	</div>
+
+	<div class="mt-4" >
+		<div class="btn btn-secondary link-opacity-25-hover" routerLink="/login">Logout</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	scroll-behavior: smooth;
+}
+
+/*
+.register-form-container {
+	width: 100vw;
+	height: 100vh;
+	 border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.register-form {
+	border: 1px solid black;
+	width: 50vw;
+	height: auto;
+	padding: 5px;
+}
+
+.register-form button {
+	padding: 5px;
+}
+
+
+.register-form-container input {
+	padding: 5px;
+	border-radius: 8px;
+}
+
+.register-form-container div {
+	/* border: 1px black solid;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.register-form-container label {
+	font-size: large;
+} */

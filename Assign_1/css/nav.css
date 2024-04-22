@@ -1,0 +1,16 @@
+:root {
+  --primary-overlay: rgba(176, 167, 3, 0.2);
+  --mid-color: rgba(50, 146, 166, 0.8);
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px var(--primary-overlay);
+  background: #fff !important;
+  border-bottom: var(--mid-color) 3px solid;
+}
+
+/* List Items in NAV */
+.navbar .nav-item {
+  font-size: 1rem;
+  padding: 0 1.4rem 0 0;
+}

@@ -1,0 +1,126 @@
+/*
+ * @desc Dashboard Styling
+ * @author Robert Miras
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+:root {
+  --sidebar-width: 15rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+small {
+  color: #222;
+}
+
+body {
+  background: #f5f5fd;
+  color: #222;
+  line-height: 1.8;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.dashboard-nav {
+  min-width: calc(100% - var(--sidebar-width));
+  width: calc(100% - var(--sidebar-width)) !important;
+  margin-left: var(--sidebar-width) !important;
+  z-index: 9999;
+}
+
+.dashboard-nav ul li {
+  padding-right: 0.4rem;
+}
+
+.footer-dashboard {
+  min-width: calc(100% - var(--sidebar-width));
+  width: calc(100% - var(--sidebar-width)) !important;
+  margin-left: var(--sidebar-width) !important;
+  z-index: 9999;
+}
+
+.vertical-nav {
+  min-width: var(--sidebar-width);
+  width: var(--sidebar-width);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  overflow-y: auto;
+}
+.page-content {
+  width: calc(100% - var(--sidebar-width));
+  margin-left: var(--sidebar-width);
+  transition: all 0.4s;
+  overflow-y: auto;
+}
+
+#sidebar .active {
+  color: var(--orange) !important;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.nav-link {
+  text-transform: capitalize;
+}
+.nav-link:hover {
+  background: #f3f2f2;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.notification p{
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -15rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  .navbar {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  #content.active {
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+  }
+}
